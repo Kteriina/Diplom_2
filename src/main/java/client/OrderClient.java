@@ -1,8 +1,10 @@
+package client;
+
 import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import praktikum.burger.pojo.Order;
-public class OrderObj {
+public class OrderClient {
     private static final String CREATE_ORDER = "/api/orders/";
     private static final String GET_USER_ORDERS = "/api/orders/";
     private static final String GET_INGREDIENTS_DATA = "/api/ingredients/";

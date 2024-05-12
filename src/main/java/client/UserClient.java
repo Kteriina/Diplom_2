@@ -1,9 +1,11 @@
+package client;
+
 import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import praktikum.burger.pojo.User;
 
-public class UserObj {
+public class UserClient {
     private static final String CREATE_USER = "/api/auth/register/";
     private static final String LOGIN_USER = "/api/auth/login/";
     private static final String CHANGE_USER = "/api/auth/user";
@@ -11,7 +13,7 @@ public class UserObj {
 
     @Step("Создание пользователя")
     public Response createUser(User user) {
-        return RestAssured.given()
+        return RestAssured.given().log().all()
                 .header("Content-type", "application/json")
                 .body(user)
                 .when()

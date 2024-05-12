@@ -1,3 +1,4 @@
+import client.UserClient;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
@@ -10,8 +11,7 @@ import praktikum.burger.pojo.User;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 public class CreateUserTest extends BaseTest{
-    UserObj userObj = new UserObj();
-    private String bearerToken;
+    UserClient userClient = new UserClient();
 
     @Test
     @DisplayName("Создание уникального пользователя")
@@ -22,8 +22,8 @@ public class CreateUserTest extends BaseTest{
         String name = RandomStringUtils.random(8);
         User user = new User(email, password, name);
 
-        Response response = userObj.createUser(user);
-        response.then().assertThat().body("success", equalTo(true)).and().statusCode(200);
+        Response response = userClient.createUser(user);
+        response.then().assertThat().log().all().body("success", equalTo(true)).and().statusCode(200);
         bearerToken = response.jsonPath().getString("accessToken");
 
 
@@ -38,10 +38,10 @@ public class CreateUserTest extends BaseTest{
         String name = RandomStringUtils.random(8);
         User user = new User(email, password, name);
 
-        Response response = userObj.createUser(user);
+        Response response = userClient.createUser(user);
         bearerToken = response.jsonPath().getString("accessToken");
 
-        Response response_2 = userObj.createUser(user);
+        Response response_2 = userClient.createUser(user);
         response_2.then().assertThat().body("success", equalTo(false)).body("message", equalTo("User already exists")).and().statusCode(403);
 
 
@@ -56,7 +56,7 @@ public class CreateUserTest extends BaseTest{
         String name = RandomStringUtils.random(8);
         User user = new User(email, password, name);
 
-        Response response = userObj.createUser(user);
+        Response response = userClient.createUser(user);
         response.then().assertThat().body("success", equalTo(false)).body("message", equalTo("Email, password and name are required fields")).and().statusCode(403);
         bearerToken = response.jsonPath().getString("accessToken");
 
@@ -71,7 +71,7 @@ public class CreateUserTest extends BaseTest{
         String name = "";
         User user = new User(email, password, name);
 
-        Response response = userObj.createUser(user);
+        Response response = userClient.createUser(user);
         response.then().assertThat().body("success", equalTo(false)).body("message", equalTo("Email, password and name are required fields")).and().statusCode(403);
         bearerToken = response.jsonPath().getString("accessToken");
 
@@ -86,21 +86,11 @@ public class CreateUserTest extends BaseTest{
         String name = RandomStringUtils.random(8);
         User user = new User(email, password, name);
 
-        Response response = userObj.createUser(user);
+        Response response = userClient.createUser(user);
         response.then().assertThat().body("success", equalTo(false)).body("message", equalTo("Email, password and name are required fields")).and().statusCode(403);
         bearerToken = response.jsonPath().getString("accessToken");
 
 
     }
 
-    @After
-    public void tearDown() {
-        if (bearerToken != null) {
-
-            Response deletion = userObj.delete(bearerToken);
-            deletion.then().log().all().assertThat().statusCode(202).and().body("success", Matchers.is(true)).body("message", Matchers.is("User successfully removed"));
-
-        }
-
-    }
 }

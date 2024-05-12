@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ChangeDataUserTest" time="16.569" tests="3" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ChangeDataUserTest" time="8.212" tests="3" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.21_9\bin"/>
-    <property name="sun.java.command" value="C:\Users\voron\AppData\Local\Temp\surefire9384238754624503873\surefirebooter9792920661618208722.jar C:\Users\voron\AppData\Local\Temp\surefire9384238754624503873 2024-05-06T18-14-26_465-jvmRun1 surefire11972908284069851729tmp surefire_08723880016999196656tmp"/>
+    <property name="sun.java.command" value="C:\Users\voron\AppData\Local\Temp\surefire14744279311461562176\surefirebooter13914103246120531270.jar C:\Users\voron\AppData\Local\Temp\surefire14744279311461562176 2024-05-12T23-40-12_033-jvmRun1 surefire13938834207553532532tmp surefire_09248024488057529934tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\cygwin64\home\voron\Diplom\Diplom_2\target\test-classes;C:\cygwin64\home\voron\Diplom\Diplom_2\target\classes;C:\Users\voron\.m2\repository\io\qameta\allure\allure-junit4\2.15.0\allure-junit4-2.15.0.jar;C:\Users\voron\.m2\repository\io\qameta\allure\allure-java-commons\2.15.0\allure-java-commons-2.15.0.jar;C:\Users\voron\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\voron\.m2\repository\io\qameta\allure\allure-model\2.15.0\allure-model-2.15.0.jar;C:\Users\voron\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\voron\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\voron\.m2\repository\io\qameta\allure\allure-rest-assured\2.15.0\allure-rest-assured-2.15.0.jar;C:\Users\voron\.m2\repository\io\qameta\allure\allure-attachments\2.15.0\allure-attachments-2.15.0.jar;C:\Users\voron\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\voron\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\voron\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar;C:\Users\voron\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\voron\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\voron\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\voron\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\voron\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\voron\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\voron\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\voron\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\voron\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\voron\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\voron\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\voron\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\voron\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\voron\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\voron\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\voron\AppData\Local\Temp\surefire9384238754624503873\surefirebooter9792920661618208722.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\voron\AppData\Local\Temp\surefire14744279311461562176\surefirebooter13914103246120531270.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.21+9-LTS"/>
@@ -63,41 +63,58 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="changeDataUserWithAuthorization" classname="ChangeDataUserTest" time="11.84"/>
-  <testcase name="changeUserWhenEmailStayTheSame" classname="ChangeDataUserTest" time="2.634">
+  <testcase name="changeDataUserWithAuthorization" classname="ChangeDataUserTest" time="5.69"/>
+  <testcase name="changeUserWhenEmailStayTheSame" classname="ChangeDataUserTest" time="1.247">
     <failure message="1 expectation failed.&#10;JSON path success doesn&apos;t match.&#10;Expected: &lt;false&gt;&#10;  Actual: &lt;true&gt;&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 1 expectation failed.
 JSON path success doesn't match.
 Expected: <false>
   Actual: <true>
 
-	at ChangeDataUserTest.changeUserWhenEmailStayTheSame(ChangeDataUserTest.java:78)
+	at ChangeDataUserTest.changeUserWhenEmailStayTheSame(ChangeDataUserTest.java:63)
 ]]></failure>
-    <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Mon, 06 May 2024 15:14:45 GMT
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "?????@yandex.ru",
+    "password": "??????",
+    "name": "?????"
+}
+HTTP/1.1 200 OK
+Date: Sun, 12 May 2024 20:40:23 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"5a-nosNhhkaKyLZdQtSkFvh49+9pLQ"
+ETag: W/"5b-4MKYM5Eq6xrZjAlMUFoUwXEVDWU"
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=j9tzYTcyJLu4ydf9Anm8jh0k6bAit7An3u%2BtMOBi5yVVguM%2Bju4U%2F5JUpU%2BoyVKJfmzoRUxkg%2FiW3LkBjaQgNAxXJ9KRNPFfJIK9W8ZhopxStTumGqVz3u8F0d%2B8tgOBmrWKoU7Y%2FxnWgdyrCH%2F9%2FWrQNRo%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=gsIHClvsodF03oUehyr%2FbC3IuL1%2FTfNsPY3iamQ4yPYveHWrMaVOmbZY309e0LZjpQnPdw5bBhl6GvcfS1SOTWH48Xto4v6F3T4i9Sl0vxIEGfPn76WRaOnimCXxIzk4RZBHno6w%2BkWalCtynURHM6zpgcw%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 87f9ebf80b6037ef-FRA
+CF-RAY: 882d39378d882d92-ARN
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
 
 {
     "success": true,
     "user": {
-        "email": "????@yandex.ru",
+        "email": "?????@yandex.ru",
         "name": "?????"
     }
 }
 HTTP/1.1 202 Accepted
-Date: Mon, 06 May 2024 15:14:46 GMT
+Date: Sun, 12 May 2024 20:40:23 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 54
 Connection: keep-alive
@@ -105,10 +122,10 @@ X-Powered-By: Express
 Access-Control-Allow-Origin: *
 ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=3dCrGNCbQJH1aMW7lqlbpEpT1PDF%2B0R8DZSevZ%2FleoCXcuwHycqSZOo87Ig%2BMu9zPtZGFseBOUlsJO17Yv3SI0JQLJ%2Fy5JfB8xLUWjUjpU%2FLFw6g6yJ1YZQzVpQ8dUNDJf1%2FmjmLmoOPziTB5qcAICAZQec%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=nhjZfMU%2BrwDDCdXKIP5ehECXewQPJjWCr%2FddSuaNHXMcxcBOtNSWWR9dX9qPOMGnvHqudeYaZKQIjWDv771ZRdE%2BeGb3VXmV2LdCTTC%2BS0xche%2BQOhZ7FWc8Z92TlL%2FyEUFF7a2OJTsYWQ821APOnRSoqAA%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 87f9ebfdb855bb9b-FRA
+CF-RAY: 882d3939dad692a9-CPH
 alt-svc: h3=":443"; ma=86400
 
 {
@@ -117,5 +134,5 @@ alt-svc: h3=":443"; ma=86400
 }
 ]]></system-out>
   </testcase>
-  <testcase name="changeDataUserWithoutAuthorization" classname="ChangeDataUserTest" time="1.576"/>
+  <testcase name="changeDataUserWithoutAuthorization" classname="ChangeDataUserTest" time="1.007"/>
 </testsuite>
