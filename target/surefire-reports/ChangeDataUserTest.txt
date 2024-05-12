@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: ChangeDataUserTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.212 s <<< FAILURE! - in ChangeDataUserTest
+changeUserWhenEmailStayTheSame(ChangeDataUserTest)  Time elapsed: 1.247 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path success doesn't match.
+Expected: <false>
+  Actual: <true>
+
+	at ChangeDataUserTest.changeUserWhenEmailStayTheSame(ChangeDataUserTest.java:63)
+
